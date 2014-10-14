@@ -81,7 +81,7 @@ Nano has a shortcut bar at the bottom of the terminal screen with the most-used 
 4. Run the script. Note it is likely not in your $PATH, so you will need to call directly.
 
 <a name='unit2'></a>
-## Unit 2: Errors, they happen
+## Unit 2: Errors - they happen
 
 In the most basic form, scripts are just a series of commands:
 
@@ -91,7 +91,6 @@ In the most basic form, scripts are just a series of commands:
     mkdir /data/project3
     chgrp coolphds /data/project3
     chmod g+w /data/project3
- 
 
 This isn’t a very good shell script. Let’s make it better.  A **major** difference between a human entering commands and a shell script is error checking and error handling.
 
@@ -286,7 +285,6 @@ Loops allow code to be repeatedly executed:
     do
      touch ${COUNT}.txt
     done
- 
 
 You may also come across the old fashioned `for COUNT in $( seq 1 10 )`.
 
@@ -376,7 +374,6 @@ Input file:
     Eric 1999
     Ernest 2003
     Jose 2004
- 
 
 We can add additional filters with pipes ("|"). 
 
