@@ -8,7 +8,7 @@ A Little More Advanced Linux
 Chris Collins, Jimmy Dorff, Drew Stinnett, et al
 
 **Table of Contents**
- 
+
 1. [Lab 0: Creating a Personal Linux VM](#lab0)
 2. [Unit 1: Your Friend, the Shell](#unit1)
 3. [Lab 1: Create and Execute a Shell Script](#lab1)
@@ -48,8 +48,6 @@ The vm-manage web page will tell you the name for your VM. The web site will als
 The unix shell is how you interact with the operating system - how you manipulate files and execute programs. You can automate shell commands. The shell can read a series of commands from a file rather than you typing it in. This is **scripting**.
 
 You can add logic and flow control to scripts. Scripting is very powerful and should be used for all repetitive or complex tasks.
-
-< GRUMPY CAT IMAGE > 
 
 ![grumpycat.jpg](images/grumpycat.jpg "Grumpy Cat")
 
