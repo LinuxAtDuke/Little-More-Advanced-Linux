@@ -7,6 +7,7 @@ A Little More Advanced Linux
 
 Chris Collins, Jimmy Dorff, Drew Stinnett, et al
 
+**Table of Contents**
  
 1. [Lab 0: Creating a Personal Linux VM](#lab0)
 2. [Unit 1: Your Friend, the Shell](#unit1)
@@ -14,7 +15,7 @@ Chris Collins, Jimmy Dorff, Drew Stinnett, et al
 4. [Unit 2: Errors - They Happen](#unit2)
 5. [Lab 2: Create a Script with Error Checking](#lab2)
 6. [Unit 3: Variables](#unit3)
-8. [Lab 3: Working with Variables](#lab3)
+7. [Lab 3: Working with Variables](#lab3)
 8. [Unit 4: Looping with For and While](#unit4)
 
 
