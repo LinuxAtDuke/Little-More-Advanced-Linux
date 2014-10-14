@@ -9,14 +9,14 @@ Chris Collins, Jimmy Dorff, Drew Stinnett, et al
 
 **Table of Contents**
  
-[Lab 0: Creating a Personal Linux VM](#lab0)
-[Unit 1: Your Friend, the Shell](#unit1)
-[Lab 1: Create and Execute a Shell Script](#lab1)
-[Unit 2: Errors - They Happen](#unit2)
-[Lab 2: Create a Script with Error Checking](#lab2)
-[Unit 3: Variables](#unit3)
-[Lab 3: Working with Variables](#lab3)
-[Unit 4: Looping with For and While](#unit4)
+1. [Lab 0: Creating a Personal Linux VM](#lab0)
+2. [Unit 1: Your Friend, the Shell](#unit1)
+3. [Lab 1: Create and Execute a Shell Script](#lab1)
+4. [Unit 2: Errors - They Happen](#unit2)
+5. [Lab 2: Create a Script with Error Checking](#lab2)
+6. [Unit 3: Variables](#unit3)
+7. [Lab 3: Working with Variables](#lab3)
+8. [Unit 4: Looping with For and While](#unit4)
 
 
 <a name='lab0'></a>
