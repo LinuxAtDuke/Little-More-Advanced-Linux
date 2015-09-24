@@ -434,6 +434,7 @@ components needed to create a complete platform such that no additional software
 Applications are said to "run on" or "run on top of" the resulting platform".
 
 *Example:*
+
     OS + GNU C Library    
     OS + Matlab + Image Processing Toolbox
     OS + Python(2,3) + SciPy + NumPy
@@ -449,11 +450,46 @@ Workarounds exist. For compiled programs, one can compile statically. For python
 Install the python-virtualenv, python-visual, and python-dev packages on your VM. Note how many packages and libraries are installed.
 
 *Example:*
+
     $ virtualenv
     The program 'virtualenv' is currently not installed. You can install it by typing:
     sudo apt-get install python-virtualenv
     $ sudo apt-get install python-virtualenv
 
+## Unit 7: Distributed and Parallel computing
+
+Batch processing is running programs without manual intervention. Hence the emphasis on scripting and automation.
+You need to consider the parts of your job; its input, output, and requirements. You describe your job to a job scheduler
+and it is executed across a number of systems. It's best to start out with small, simple jobs.
+
+*Exmaple condor sumbit file:*
+
+    # The UNIVERSE defines an execution environment. You will almost always use VANILLA. 
+    Universe = vanilla 
+
+    # EXECUTABLE is the program your job will run  
+    Executable = simple 
+
+    # ERROR and OUTPUT are the error and output channels from your job
+    # that HTCondor returns from the remote host.
+    Error = job.$(Process).error
+    Output = job.$(Process).output
+
+    # The LOG file is where HTCondor places information about your 
+    # job's status, success, and resource consumption. 
+    Log = job.$(Process).log
+
+    # +ProjectName is the name of the project reported to the OSG accounting system
+    +ProjectName="duke-campus"
+
+    # QUEUE is the "start button" - it launches any jobs that have been 
+    # specified thus far. 
+    Queue 10
+
+
+* Condor via on campus systems and [CI-Connet](https://wiki.duke.edu/display/SCSC/Duke+CI+Connect+Quick+Start)
+* Slurm via on [duke compute cluster](https://rc.duke.edu/the-duke-compute-cluster/)
+* OSG and XSEDE
 
 
 
