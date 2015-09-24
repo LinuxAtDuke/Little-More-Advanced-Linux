@@ -427,6 +427,36 @@ Another important Unix principle is “there is always more than one way to do i
 * `awk` is a full programing language, but is often used for simple one line programs inside of shell scripts.
 * `perl` and `python` are even more powerful programing languages and should be used for more advanced tasks than shell scripts.
 
+## Unit 6: The pain of the stack
+
+Modern software uses many components, which we call a stack. To quote wikipedia, "a set of software subsystems or 
+components needed to create a complete platform such that no additional software is needed to support applications. 
+Applications are said to "run on" or "run on top of" the resulting platform".
+
+*Example:*
+    OS + GNU C Library    
+    OS + Matlab + Image Processing Toolbox
+    OS + Python(2,3) + SciPy + NumPy
+    OS + Python + SciPy + Visual Python
+    
+Each addition can add many new dependencies. This can lead to Dependency hell. On shared system or large grid environments this is a major issue.
+Linux distributions have tools to resolve dependencies for distribution provided packages, but these require admin access and will not work for custom or niche software.
+
+Workarounds exist. For compiled programs, one can compile statically. For python, one can use a python virtual environment. The future will involve virtualization and software containers. The most popular software container is Docker.
+    
+## Lab 5: Be the sysadmin
+
+Install the python-virtualenv, python-visual, and python-dev packages on your VM. Note how many packages and libraries are installed.
+
+*Example:*
+    $ virtualenv
+    The program 'virtualenv' is currently not installed. You can install it by typing:
+    sudo apt-get install python-virtualenv
+    $ sudo apt-get install python-virtualenv
+
+
+
+
 ---
 
 ![Creative Commons CC0 1.0 License](http://i.creativecommons.org/p/zero/1.0/88x31.png)
